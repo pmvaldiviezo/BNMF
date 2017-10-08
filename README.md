@@ -9,8 +9,9 @@ The input of the algorithm is a matrix of rating R, the number of gropus K, alph
  
  # Installation
  
- First, download the package from https://github.com/pmvaldiviezo/BNMF/releases/tag/BNMF1.0
- BNMF can be installed by running the R environment and typing:
+First, download the package from https://github.com/pmvaldiviezo/BNMF/releases/tag/BNMF1.0
+
+BNMF can be installed by running the R environment and typing:
  
     install.packages("BNMF_1.0.tar.gz", repos=NULL)
  
