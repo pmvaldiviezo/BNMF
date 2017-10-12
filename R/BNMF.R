@@ -7,7 +7,7 @@
 #' @return matrix  \code{outR}   \code{au.k}   \code{bk.i}
 
 BNMF<-
-  function(iter=5,R,k=6,alpha=0.8,eta=5){
+  function(iter,R,k,alpha,eta){
     ##Initialization of the model
     M <- ncol(R)  #Number items
     N <- nrow(R)
