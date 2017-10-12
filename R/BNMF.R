@@ -1,5 +1,5 @@
 #' Main function which invocate others functions for the run of the algorithm
-#' @param steps     number iterations 
+#' @param iter      number of iterations
 #' @param R         matrix of ratings
 #' @param k         number of latent factors
 #' @param alpha     for learning the algorithm
@@ -7,7 +7,7 @@
 #' @return matrix  \code{outR}   \code{au.k}   \code{bk.i}
 
 BNMF<-
-  function(steps,R,k,alpha,eta){
+  function(iter=5,R,k=6,alpha=0.8,eta=5){
     ##Initialization of the model
     M <- ncol(R)  #Number items
     N <- nrow(R)
@@ -16,7 +16,7 @@ BNMF<-
     xs <- "Iteration: " 
     cat(xs, " ...", sep="")
     
-    for (step in 1:steps) {
+    for (step in 1:iter) {
       #####print iterations#####
       xs <- paste(xs, step, ", ", sep="")
       cat("\r")
