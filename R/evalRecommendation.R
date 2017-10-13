@@ -31,7 +31,7 @@ PrecisionRecall<-function(predictions,vectPredictions,ratings.tst){
     recall<-c(tmp,recall)
     tmp<-f1
     F1<-c(tmp,F1)
-    write.table(x = paste(c(np,indicTst$Prc, indicTst$Rec,f1), collapse=";"), file = "metricsBNMF.csv", row.names = FALSE, col.names = FALSE, quote = FALSE, append = TRUE)
+    #write.table(x = paste(c(np,indicTst$Prc, indicTst$Rec,f1), collapse=";"), file = "metricsBNMF.csv", row.names = FALSE, col.names = FALSE, quote = FALSE, append = TRUE)
   }
   print(data.frame(TopN=vectPredictions,precision,recall,F1))
 }
