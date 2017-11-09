@@ -13,7 +13,7 @@ First, download the package from https://github.com/pmvaldiviezo/BNMF/releases/t
 
 BNMF can be installed by running the R environment and typing:
  
-    install.packages("BNMF_1.0.tar.gz", repos=NULL)
+    install.packages("BNMF_1.0.tar.gz", repos=NULL,type = "source")
  
  
  # Example
